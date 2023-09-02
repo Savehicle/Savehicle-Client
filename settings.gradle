@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Navi SDK 설정
+        maven {
+            url = "https://devrepo.tmapadmin.com/repository/tmap-sdk-release/"
+        }
+    }
+}
+rootProject.name = "Savehicle"
+include ':app'
